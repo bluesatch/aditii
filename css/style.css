@@ -1,0 +1,375 @@
+/* fonts
+
+font-family: 'Lobster Two', cursive;
+font-family: 'Oswald', sans-serif;
+
+*/
+
+/* generic */
+
+:root {
+    --prim: #3dc4b6;
+    --sec: #4ccfc1;
+    --grayText: #afafaf;
+    --tert: #37c796;
+    --textFont: 'Oswald', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--textFont);
+}
+
+.inner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* header */
+
+.header {
+    padding-top: 10px;
+}
+
+.top-header {
+    padding-bottom: 5px; 
+}
+
+.top-header .inner {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    margin: 0;
+    color: var(--prim);
+    font-family: 'Lobster Two', cursive;
+    font-size: calc(14px + (42 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: capitalize;
+}
+
+.search-form {
+    width: 40%;
+    /* border: 1px solid green; */
+}
+
+.search {
+    width: 90%;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    /* border: 1px solid red; */
+}
+
+.cart-total {
+    margin: 0;
+    color: var(--grayText);
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.nav {
+    padding: 10px 0;
+    background-color: var(--sec);
+}
+
+.top-nav {
+    margin: 0;
+}
+
+.top-nav-item {
+    display: inline;
+    padding: 2px 45px;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    
+}
+
+.top-nav-item:first-child {
+    padding-left: 0;
+}
+
+.top-nav-item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+/* close header */
+
+/* main */
+
+
+.banner {
+    padding: 20px;
+    height: 40vh;
+    background-color: var(--prim);
+    /* height: 260px; */
+}
+
+.banner .inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.banner-text-div, .banner-img-div {
+    padding: 10px;
+    width: 26%;
+    height: 35vh;
+    /* border: 1px solid white; */
+}
+
+.banner-img {
+    display: block;
+    /* margin-right: 50px; */
+    float: right;
+}
+
+.banner-header {
+    /* margin: 0; */
+    margin-top: 0;
+    color: #fff;
+    font-size: calc(14px + (48 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.banner-text {
+    /* margin: 0; */
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.banner-btn {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    border-radius: 8px;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 8px;
+    width: 140px;
+    height: 60px;
+    /* border: 1px solid #fff; */
+}
+
+.slider {
+    margin-top: 20px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.slider:hover {
+    background: var(--sec);
+}
+
+
+.sales {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.sales-slider {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 100;
+    color: var(--grayText);
+}
+
+.sales .inner {
+    /* display: flex;
+    justify-content: center;  */
+    /* border: 1px solid black; */
+}
+
+.sales-figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    width: calc(100% / 3);
+    /* width: 25%; */
+    /* border: 1px solid var(--grayText); */
+    float: left;
+}
+
+.sales-figure:nth-child(2) {
+    border-right: 1px solid var(--grayText);
+    border-left: 1px solid var(--grayText);
+}
+
+figcaption {
+    padding: 15px;
+    width: 30%;
+    /* border: 1px solid black; */
+}
+
+.sales-header {
+    color: var(--grayText);
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.shop-btn {
+    padding: 3px 16px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: var(--tert);
+    border-radius: 5px;
+}
+
+.featured-header {
+    padding: 2px 0;
+    background-color: var(--prim);
+}
+
+.featured-sub-header {
+    color: #fff;
+    font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 90vh;
+    /* border: 1px solid black; */
+}
+
+.products-inner {
+    padding: 40px 0;
+}
+
+.product {
+    margin: 0;
+    padding: 20px;
+    width: 27%;
+    border: 2px solid var(--grayText);
+    border-bottom: 10px solid var(--tert);
+}
+
+.featured-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.product-caption {
+    margin: 0 auto;
+    /* border: 1px solid green; */
+    width: 80%;
+    text-align: center;
+}
+
+.product-sub-header {
+    margin-bottom: 0;
+    color: var(--grayText);
+    font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+.price-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price {
+    margin: 0;
+    /* display: inline-block; */
+    color: var(--grayText);
+    font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+}
+
+/* close main */
+
+/* footer */
+
+.footer {
+    background-color: var(--prim);
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-sub-header {
+    color: #fff;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.footer-list-item {
+    line-height: 2;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.footer-list-item a {
+    color: #fff;
+}
+
+.colophon {
+    padding: 10px 0;
+    background-color: var(--sec);
+}
+
+.colophon-text {
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+/* close footer */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .grandparent {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 100px auto;
+            width: 900px;
+            height: 900px;
+            background: olive;
+        }
+
+        .child {
+            width: 600px;
+            height: 300px;
+        }
+
+        .child1 {
+            display: flex;
+            background: orange;
+        }
+
+        .child2 {
+            background: purple;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 300px;
+        }
+
+        .grandchild:first-child {
+            background-color: aqua;
+        }
+
+        .grandchild:last-child {
+            background-color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="child child1">
+            <div class="grandchild"></div>
+            <div class="grandchild"></div>
+        </div>
+        <div class="child child2"></div>
+    </div>
+</body>
+</html>
